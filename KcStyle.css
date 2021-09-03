@@ -1,0 +1,363 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url(SourceFiles/KcBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px 110px;
+}
+
+.logo {
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 96px;
+    line-height: 112.5px;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(161, 114, 114, 1);
+}
+
+.header p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: white;
+}
+
+.book-form {
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px;
+    padding: 10px;
+    width: 35%;
+}
+
+.book-form label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 16.41px;
+    margin-top: 15px;
+}
+
+.book-form input {
+    background-color: rgba(243, 245, 255, 1);
+    padding: 6px 0px;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.card-title {
+    margin: 10px 5px;
+}
+
+.book-form .form-seg-1 input {
+    width: 100%;
+    height: 20px;
+}
+
+.book-form .form-seg-2 input {
+    width: 100%;
+    height: 20px;
+}
+
+.form-seg-2 {
+    width: 50%;
+    padding: 5px;
+}
+
+.book-form h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #434966;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.seg-2-overall {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* segment 3 begins here */
+
+.seg-3-overall {
+    width: 100%;
+}
+
+.form-seg-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-input {
+    width: 70%;
+}
+
+.form-seg-3 input {
+    width: 100%;
+}
+
+.label-buttons {
+    display: flex;
+}
+
+.label-buttons img {
+    margin: 8px;
+    width: 100%;
+    align-self: center;
+}
+
+.p-fonts {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 16.41px;
+    margin-top: 10px;
+}
+
+
+/* segment 3 ends here */
+
+
+/* card footer */
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.vat {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+.book-now-button {
+    width: 100%;
+    height: 42px;
+    background-color: rgba(227, 55, 65, 1);
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto" sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    border: 0;
+    margin: 7px 0px;
+}
+
+
+/*  ____________________________________________________________________________________________*/
+
+
+/* Kings cruiser page 2 styling*/
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-form-2 {
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    margin: 80px;
+}
+
+.ticket-title {
+    text-align: center;
+    margin: 50px 0px 5px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 56.25px;
+}
+
+.ticket-no {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-no-pointer {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    padding-right: 5px;
+}
+
+.ticket-no-in-digits {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15.23px;
+    color: rgba(67, 73, 102, 1);
+}
+
+.cruising-pointer {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    padding-right: 5px;
+}
+
+.cruising-choice {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15.23px;
+    color: rgba(67, 73, 102, 1);
+}
+
+.from-location {
+    display: flex;
+}
+
+.to-location {
+    display: flex;
+}
+
+.from-to {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.departure-date {
+    display: flex;
+}
+
+.return-date {
+    display: flex;
+}
+
+.departure-return {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.table-and-logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.red-logo {
+    align-self: center;
+}
+
+.seats-no {
+    display: flex;
+}
+
+.table-content {
+    display: grid;
+    grid-template-columns: 33.34% 33.34% 33.34%;
+    grid-column-gap: 2.1em;
+    margin-top: 20px;
+}
+
+.table-content-w-underline {
+    display: grid;
+    grid-template-columns: 33.34% 33.34% 33.34%;
+    grid-column-gap: 2.1em;
+    border-bottom: solid 3px black;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.table-content-total {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 6em;
+    margin-top: 1em;
+}
+
+.seat-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.total-font {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+.print-button {
+    width: 90%;
+    height: 3em;
+    background: rgba(227, 55, 65, 1);
+    margin: 50px 20px 0px 20px;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto" sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    border: 0;
+}
+
+.kc-text {
+    width: 70%;
+    align-self: center;
+    margin: 8%;
+    padding-left: 2em;
+}
