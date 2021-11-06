@@ -33,12 +33,12 @@
             <div class="from-to">
                 <div class="from-location">
                     <p class="cruising-pointer">Cruising from: </p>
-                    <p class="cruising-choice"> London, England</p>
+                    <p class="cruising-choice" id="output-from-location"></p>
                 </div>
 
                 <div class="to-location">
                     <p class="cruising-pointer">Cruising to: </p>
-                    <p class="cruising-choice"> NewYork, USA</p>
+                    <p class="cruising-choice" id="output-to-location"></p>
                 </div>
             </div>
             <!-- (from to) div end-->
@@ -46,12 +46,12 @@
             <div class="departure-return">
                 <div class="from-location">
                     <p class="cruising-pointer">Departure: </p>
-                    <p class="cruising-choice"> 07/23/21</p>
+                    <p class="cruising-choice" id="output-departure-date"> mm/dd/yyyy</p>
                 </div>
 
                 <div class="return-date">
                     <p class="cruising-pointer">Return: </p>
-                    <p class="cruising-choice"> 08/03/21</p>
+                    <p class="cruising-choice" id="output-return-date"> mm/dd/yyyy</p>
                 </div>
             </div>
             <!--departure-return-div-end-->
@@ -62,29 +62,29 @@
                         <p class="cruising-pointer">VIP :</p>
                         <div class="seats-no">
                             <p class="seat-text">seats:</p>
-                            <p class="cruising-choice">01</p>
+                            <p class="cruising-choice" id="output-vip-seat-no">00</p>
                         </div>
-                        <p class="cruising-choice">$14000</p>
+                        <p class="cruising-choice" id="output-vip-price">$000</p>
                     </div>
                     <div class="table-content">
                         <p class="cruising-pointer">First class :</p>
                         <div class="seats-no">
                             <p class="seat-text">seats:</p>
-                            <p class="cruising-choice">01</p>
+                            <p class="cruising-choice" id="output-first-class-seat-no">00</p>
                         </div>
-                        <p class="cruising-choice">$1500</p>
+                        <p class="cruising-choice" id="output-first-class-price">$000</p>
                     </div>
                     <div class="table-content-w-underline">
                         <p class="cruising-pointer">Economy :</p>
                         <div class="seats-no">
                             <p class="seat-text">seats:</p>
-                            <p class="cruising-choice">02</p>
+                            <p class="cruising-choice" id="output-economy-seat-no">00</p>
                         </div>
-                        <p class="cruising-choice">$2000</p>
+                        <p class="cruising-choice" id="output-economy-price">$000</p>
                     </div>
                     <div class="table-content-total">
-                        <p class="total-font">Total</p>
-                        <p class="total-font">$17500</p>
+                        <p class="total-font" >Total</p>
+                        <p class="total-font" id="output-total-price">$000</p>
                     </div>
                 </div>
                 <!--seat table end-->
@@ -93,15 +93,16 @@
             </div>
             <!--table and logo end-->
 
-            <button class="print-button">Print the ticket</button>
+            <button id="print-button">Print the ticket</button>
 
-            <img class="kc-text" src="SourceFiles/KCtext.png" </div>
-            <!--book-form-end-->
-
+            <img class="kc-text" src="SourceFiles/KCtext.png">
         </div>
-        <!--container-end-->
+        <!--book-form-end-->
 
+    </div>
+    <!--container-end-->
 
+    <script src="output.js"></script>
 </body>
 
 </html>

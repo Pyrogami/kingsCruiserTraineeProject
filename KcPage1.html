@@ -28,71 +28,91 @@
         </header>
 
         <div class="book-form">
-            <h3 class="card-title" ">Book some Ocean Time with Kings cruiser</h3>
+            <h3 class="card-title">Book some Ocean Time with Kings cruiser</h3>
             <form class="form ">
 
                 <div class="seg-1-overall ">
                     <div class="form-seg-1 ">
                         <label>Cruising from:</label>
-                        <input type="text " name="From " placeholder=" London, England ">
+                        <!--<input type="text" name="From " placeholder=" London, England" id="form-from-location">-->
+                        <select name="locations" id="from-location-select">
+                            <option value="Select Location">Select Location</option>
+                            <option value="Beijing, China">Beijing, China</option>
+                            <option value="Cairo, Egypt">Cairo, Egypt</option>
+                            <option value="Istanbul, Turkey">Istanbul, Turkey</option>
+                            <option value="London, England">London, England</option>
+                            <option value="Mumbai, India">Mumbai, India</option>
+                            <option value="New York, USA">New York, USA</option>
+                            <option value="Tokyo Japan">Tokyo Japan</option>
+                        </select>
                     </div>
-                    <div class="form-seg-1 ">
+                    <div class="form-seg-1">
                         <label>Cruising to:</label>
-                        <input type="text " name="To " placeholder=" New York, USA ">
+                        <!--<input type="text" name="To " placeholder=" New York, USA" id="form-to-location">-->
+                        <select name="locations" id="to-location-select">
+                            <option value="Select Location">Select Location</option>
+                            <option value="Beijing, China">Beijing, China</option>
+                            <option value="Cairo, Egypt">Cairo, Egypt</option>
+                            <option value="Istanbul, Turkey">Istanbul, Turkey</option>
+                            <option value="London, England">London, England</option>
+                            <option value="Mumbai, India">Mumbai, India</option>
+                            <option value="New York, USA">New York, USA</option>
+                            <option value="Tokyo Japan">Tokyo Japan</option>
+                        </select>
                     </div>
                 </div>
 
-                <div class="seg-2-overall ">
-                    <div class="form-seg-2 ">
+                <div class="seg-2-overall">
+                    <div class="form-seg-2">
                         <label>Departure:</label>
-                        <input type="date " name="Departure " placeholder=" mm/dd/yy ">
+                        <input type="date" name="Departure" placeholder=" mm/dd/yy" id="form-departure-date">
                     </div>
-                    <div class="form-seg-2 ">
+                    <div class="form-seg-2">
                         <label>Return:</label>
-                        <input type="date " name="Return " placeholder=" mm/dd/yy ">
+                        <input type="date" name="Return " placeholder=" mm/dd/yy " id="form-return-date">
                     </div>
                 </div>
                 <!--seg-2-overall-end-->
 
 
-                <div class="seg-3-overall ">
-                    <p class="p-fonts ">VIP ($7000):</p>
-                    <div class="form-seg-3 ">
-                        <div class="label-input ">
-                            <input type="text " name="VIP ">
+                <div class="seg-3-overall">
+                    <p class="p-fonts">VIP ($7000):</p>
+                    <div class="form-seg-3">
+                        <div class="label-input">
+                            <input type="number" name="VIP" id="form-vip">
                         </div>
                         <div class="label-buttons ">
 
-                            <img class="add " src="SourceFiles/PlusButton.png ">
+                            <img class="add" id="vip-add" src="SourceFiles/PlusButton.png ">
 
-                            <img class="minus " src="SourceFiles/MinusButton.png ">
+                            <img class="minus" id="vip-minus" src="SourceFiles/MinusButton.png ">
 
                         </div>
                     </div>
 
-                    <p class="p-fonts ">First Class ($1500):</p>
-                    <div class="form-seg-3 ">
-                        <div class="label-input ">
-                            <input type="text " name="First class ">
+                    <p class="p-fonts">First Class ($1500):</p>
+                    <div class="form-seg-3">
+                        <div class="label-input">
+                            <input type="number" id="form-first-class" name="First class">
                         </div>
-                        <div class="label-buttons ">
+                        <div class="label-buttons">
 
-                            <img class="add " src="SourceFiles/PlusButton.png ">
+                            <img class="add" id="first-class-add" src="SourceFiles/PlusButton.png">
 
-                            <img class="minus " src="SourceFiles/MinusButton.png ">
+                            <img class="minus" id="first-class-minus" src="SourceFiles/MinusButton.png ">
 
                         </div>
                     </div>
                     <p class="p-fonts ">Economy ($1000):</p>
                     <div class="form-seg-3 ">
                         <div class="label-input ">
-                            <input type="text " name="Economy ">
+                            <input type="number" id="form-economy" name="Economy">
                         </div>
-                        <div class="label-buttons ">
+                        <div class="label-buttons">
 
-                            <img class="add " src="SourceFiles/PlusButton.png ">
+                            <img class="add" id="economy-add" src="SourceFiles/PlusButton.png ">
 
-                            <img class="minus " src="SourceFiles/MinusButton.png ">
+                            <img class="minus" id="economy-minus" src="SourceFiles/MinusButton.png ">
 
                         </div>
                     </div>
@@ -102,20 +122,20 @@
                     <div class="cost ">
                         <div class="subtotal ">
                             <h5>Subtotal</h5>
-                            <h5>$000</h5>
+                            <h5 id="subtotal-value">$000</h5>
                         </div>
                         <div class="vat ">
                             <h5>Charge 10%Vat</h5>
-                            <h5>$000</h5>
+                            <h5 id="vat-value">$000</h5>
                         </div>
                         <div class="total ">
                             <h5>Total</h5>
-                            <h5>$000</h5>
+                            <h5 id="total-value">$000</h5>
                         </div>
                     </div>
 
 
-                    <button class="book-now-button ">Book Now</button>
+                    <button type="submit" id="book-now-button">Book Now</button>
 
                 </div>
 
@@ -128,6 +148,8 @@
     </div>
 
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
